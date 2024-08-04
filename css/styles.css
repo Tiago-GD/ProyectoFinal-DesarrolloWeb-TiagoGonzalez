@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+  flex: none;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0; }
+
+.logo-container {
+  flex: 1; }
+  .logo-container .logo {
+    width: 10.3125rem;
+    height: 10.3125rem;
+    margin-left: 1.25rem; }
+
+footer {
+  display: grid;
+  grid-template-rows: repeat(0);
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: none;
+  row-gap: none;
+  justify-content: none;
+  align-items: none;
+  background-color: #A75151;
+  width: 100%; }
+  footer .footer-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: none;
+    align-items: center;
+    gap: none;
+    flex: none;
+    text-align: center;
+    margin: 20px auto; }
+    footer .footer-main .footer-logo img {
+      width: 10.3125rem;
+      height: 10.3125rem; }
+  footer .footer-contact {
+    margin: 75px auto;
+    text-align: center; }
+  footer .footer-hours {
+    margin: 75px auto;
+    text-align: center; }
+  footer .footer-social {
+    grid-column: 3/4;
+    text-align: center; }
+    footer .footer-social img {
+      width: 4.375rem;
+      height: 3.75rem;
+      margin: 1.875rem;
+      display: inline-block; }
+  footer .footer-main p, footer .footer-hours p, footer .footer-contact p {
+    color: white;
+    font-family: "Abel";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.25rem;
+    margin: 30px auto; }
+  footer .footer-hours h2, footer .footer-contact h2 {
+    color: white;
+    font-family: "Arbutus Slab";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2rem;
+    margin-left: .625rem;
+    margin-bottom: 1.25rem; }
+
+.button-delivery, .footer-main a, .footer-contact a, .button-delivery-active {
+  color: white;
+  font-family: "Antonio";
+  font-weight: none;
+  font-style: none;
+  font-size: 1.5625rem;
+  background-color: #A10000;
+  border-radius: 1.875rem;
+  padding: .625rem 2.5rem;
+  margin: 2.5rem 1.875rem 0 1.875rem; }
+  .button-delivery:hover, .footer-main a:hover, .footer-contact a:hover, .button-delivery-active:hover {
+    color: #cecece; }
+
+.button-delivery-active {
+  color: black; }
+
+.footer-main a, .footer-contact a {
+  font-size: 1.25rem;
+  margin: 2.5rem 1.875rem 3.125rem 1.875rem;
+  display: inline-block; }
+
+.navbar-2 {
+  display: none; }
+  .navbar-2 .menu-toggle {
+    display: none; }
+  .navbar-2 .navbar-toggler {
+    padding: 0.5rem; }
+    .navbar-2 .navbar-toggler .navbar-toggler-icon {
+      background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(0, 0, 0, 1)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+      width: 2rem;
+      height: 2rem;
+      background-size: contain; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  flex: 2; }
+  .navbar ul, .navbar .navbar {
+    margin: 0;
+    padding: 0; }
+  .navbar .nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: none;
+    align-items: center;
+    gap: none;
+    flex: 1; }
+    .navbar .nav-list .nav-item, .navbar .nav-list .nav-item-active {
+      display: flex;
+      color: #525252;
+      font-family: "Antonio";
+      font-weight: none;
+      font-style: none;
+      font-size: 1.5625rem;
+      margin: 1.875rem; }
+      .navbar .nav-list .nav-item:hover, .navbar .nav-list .nav-item-active:hover {
+        color: #9e9e9e; }
+    .navbar .nav-list .nav-item-active {
+      color: black; }
+  .navbar .insta-navbar {
+    width: 4.375rem;
+    height: 3.9375rem;
+    margin: 1.875rem; }

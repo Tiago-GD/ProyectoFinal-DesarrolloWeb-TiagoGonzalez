@@ -1,0 +1,16 @@
+header{
+    @include flex(row, wrap, space-between, none, none, none);
+    background-color: map-get($colores, color2 );
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.logo-container {
+    flex: 1; 
+    .logo {
+        width: 10.3125rem;
+        height: 10.3125rem;
+        margin-left: 1.25rem; }}
+

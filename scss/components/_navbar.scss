@@ -1,0 +1,41 @@
+.navbar-2 {
+    display: none; 
+    .menu-toggle {
+        display: none; }
+    .navbar-toggler {
+        padding: 0.5rem; 
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(0, 0, 0, 1)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+            width: 2rem; 
+            height: 2rem; 
+            background-size: contain; 
+        }
+    }
+}
+
+.navbar{
+    @include flex(row, wrap, center, center, none, 2);
+    ul, .navbar{
+        margin: 0;
+        padding: 0}
+    .nav-list {
+        @include flex(row, wrap, none, center, none, 1);
+        .nav-item, .nav-item-active {
+            display: flex;
+            @include fonts($colorLetrasMain, "Antonio", none, none, 1.5625rem );
+            margin: 1.875rem;
+            &:hover{
+                color: rgb(158, 158, 158);
+            }
+        }
+        .nav-item-active {
+            color: map-get($colores, color1 );}
+    }
+    .insta-navbar {
+        width: 4.375rem;
+        height: 3.9375rem;
+        margin: 1.875rem;
+    }
+}
+
+

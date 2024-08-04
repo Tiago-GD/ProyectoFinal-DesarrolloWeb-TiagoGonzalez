@@ -1,0 +1,46 @@
+footer{
+    @include grid(repeat(0), repeat(3, 1fr), none, none, none, none);
+    background-color: $colorPrincipal1;
+    width: 100%;
+    .footer-main{
+        @include flex(column, wrap, none, center, none, none);
+        text-align: center;
+        margin: 20px auto;
+        .footer-logo img{ 
+            width: 10.3125rem;
+            height: 10.3125rem;    
+        }
+    }
+    .footer-contact{
+        margin: 75px auto;
+        text-align: center;
+    }
+    .footer-hours{
+        margin: 75px auto;
+        text-align: center;
+    }
+    .footer-social{
+        grid-column: 3/4;
+        text-align: center;
+        img{
+            width: 4.375rem;
+            height: 3.75rem;
+            margin: 1.875rem;
+            display: inline-block;
+        }
+    }
+    .footer-main p, .footer-hours p, .footer-contact p{
+        @include fonts(map-get($colores, color2), "Abel", normal, normal, 1.25rem);
+        margin: 30px auto;
+    }
+    .footer-hours h2, .footer-contact h2{
+        @include fonts(map-get($colores, color2), "Arbutus Slab", normal, normal, 2rem);
+        margin-left: .625rem;
+        margin-bottom: 1.25rem;  
+    }
+}
+
+
+
+
+

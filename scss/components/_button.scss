@@ -1,0 +1,21 @@
+.button-delivery , .button-delivery-active {
+    @include fonts(map-get($colores, color2), "Antonio", none, none, 1.5625rem );
+    background-color: #A10000;
+    border-radius: $border;
+    padding: .625rem 2.5rem;
+    margin: 2.5rem 1.875rem 0 1.875rem;
+    &:hover{
+        color: rgb(206, 206, 206);
+    }
+}
+
+.button-delivery-active{
+    color: black;
+}
+
+.footer-main a, .footer-contact a {
+    @extend .button-delivery;
+    font-size: 1.25rem;
+    margin: 2.5rem 1.875rem 3.125rem 1.875rem;
+    display: inline-block;
+}

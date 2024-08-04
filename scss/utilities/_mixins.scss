@@ -1,0 +1,36 @@
+@mixin hero($bgimg, $bgrepeat, $bgposition, $bgblend, $bgsize, $bgcolor, $width, $height ){
+    background-image: $bgimg;
+    background-repeat: $bgrepeat;
+    background-position: $bgposition;
+    background-blend-mode: $bgblend;
+    background-size: $bgsize;
+    background-color: $bgcolor;
+    width: $width;
+    height: $height;}
+
+@mixin flex($direction,$warp,$justify,$align,$gap,$flex){
+    display: flex;
+    flex-direction: $direction ;
+    flex-wrap: $warp ;
+    justify-content: $justify ;
+    align-items: $align ;
+    gap: $gap ;
+    flex: $flex;}
+
+@mixin grid($templaterow,$templatecomplumns,$columngap,$rowgap,$justify,$align){
+    display: grid;
+    grid-template-rows: $templaterow ;
+    grid-template-columns: $templatecomplumns ;
+    column-gap: $columngap;
+    row-gap: $rowgap;
+    justify-content: $justify ;
+    align-items: $align ;}
+
+@mixin fonts($color, $font-family, $font-weight, $font-style, $font-size){
+    color: $color;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-size: $font-size;}
+
+

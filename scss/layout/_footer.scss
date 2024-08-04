@@ -30,11 +30,11 @@ footer{
         }
     }
     .footer-main p, .footer-hours p, .footer-contact p{
-        @include fonts(map-get($colores, color2), "Abel", normal, normal, 1.25rem);
+        @include fonts(map-get($colores, color2), "Abel", normal, normal, 1.25rem, none);
         margin: 30px auto;
     }
     .footer-hours h2, .footer-contact h2{
-        @include fonts(map-get($colores, color2), "Arbutus Slab", normal, normal, 2rem);
+        @include fonts(map-get($colores, color2), "Arbutus Slab", normal, normal, 2rem, none);
         margin-left: .625rem;
         margin-bottom: 1.25rem;  
     }

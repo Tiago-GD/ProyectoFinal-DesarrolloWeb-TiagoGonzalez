@@ -5,6 +5,9 @@
 
 a {
   text-decoration: none; }
+  a:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s linear; }
 
 ul {
   list-style: none; }
@@ -73,6 +76,7 @@ footer {
     font-weight: normal;
     font-style: normal;
     font-size: 1.25rem;
+    text-align: none;
     margin: 30px auto; }
   footer .footer-hours h2, footer .footer-contact h2 {
     color: white;
@@ -80,29 +84,224 @@ footer {
     font-weight: normal;
     font-style: normal;
     font-size: 2rem;
+    text-align: none;
     margin-left: .625rem;
     margin-bottom: 1.25rem; }
 
-.button-delivery, .footer-main a, .footer-contact a, .button-delivery-active {
+body::before {
+  content: "";
+  display: block;
+  height: 10.5625rem; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: warp;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  flex: none;
+  background-color: #FFEBDD; }
+  main .hero {
+    background-image: url(https://images.unsplash.com/photo-1593504049359-74330189a345?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: rgba(138, 67, 67, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(5, 3fr);
+    grid-template-columns: repeat(3, 3fr);
+    column-gap: none;
+    row-gap: 0.625rem;
+    justify-content: none;
+    align-items: none; }
+    main .hero h1 {
+      color: white;
+      font-family: "Arbutus Slab";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 3.125rem;
+      text-align: none;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      align-self: flex-end;
+      justify-self: center; }
+    main .hero p {
+      color: white;
+      font-family: "Arbutus Slab";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.5625rem;
+      text-align: none;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      align-self: flex-start;
+      justify-self: center;
+      margin: .625rem; }
+  main .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    flex: none;
+    margin: 75px 0 75px 0; }
+    main .about h2 {
+      color: black;
+      font-family: "Arbutus Slab";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.875rem;
+      text-align: center;
+      width: 50%;
+      margin: .625rem; }
+    main .about p {
+      color: #525252;
+      font-family: "Abel";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.4375rem;
+      text-align: center;
+      width: 30%;
+      margin: .625rem; }
+  main .community {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    flex: none; }
+    main .community h2 {
+      color: black;
+      font-family: "Abel";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2rem;
+      text-align: center; }
+    main .community img {
+      width: 5rem;
+      height: 5rem;
+      margin: 1.875rem 0 75px 0;
+      align-self: center; }
+  main .service {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 3.125px;
+    row-gap: none;
+    justify-content: none;
+    align-items: none;
+    height: 50vh; }
+    main .service h3 {
+      color: black;
+      font-family: "Arbutus Slab";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.875rem;
+      text-align: center;
+      margin: 5px 0 1.25rem 0; }
+    main .service p {
+      color: #525252;
+      font-family: "Abel";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.4375rem;
+      text-align: justify;
+      width: 86%; }
+    main .service img {
+      width: 12.5rem;
+      height: 12.5rem;
+      margin: .625rem;
+      border-radius: 1.875rem; }
+    main .service .pizzeria, main .service .restaurante, main .service .cafeteria {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: none;
+      align-items: center;
+      gap: none;
+      flex: none;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      align-self: none;
+      justify-self: none; }
+    main .service .restaurante {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      align-self: none;
+      justify-self: none; }
+    main .service .cafeteria {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      align-self: flex-start;
+      justify-self: center; }
+
+.button-delivery, .footer-main a, .footer-contact a, .hero a, .bt-main-menu a, .button-delivery-active {
   color: white;
   font-family: "Antonio";
   font-weight: none;
   font-style: none;
   font-size: 1.5625rem;
+  text-align: none;
   background-color: #A10000;
   border-radius: 1.875rem;
   padding: .625rem 2.5rem;
   margin: 2.5rem 1.875rem 0 1.875rem; }
-  .button-delivery:hover, .footer-main a:hover, .footer-contact a:hover, .button-delivery-active:hover {
+  .button-delivery:hover, .footer-main a:hover, .footer-contact a:hover, .hero a:hover, .bt-main-menu a:hover, .button-delivery-active:hover {
     color: #cecece; }
 
 .button-delivery-active {
   color: black; }
+  .button-delivery-active:hover {
+    color: white; }
 
 .footer-main a, .footer-contact a {
   font-size: 1.25rem;
   margin: 2.5rem 1.875rem 3.125rem 1.875rem;
   display: inline-block; }
+
+.hero a {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  justify-self: center;
+  font-size: 1.25rem;
+  margin: 0; }
+
+.bt-main-menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  flex: none;
+  margin: 115px 0 115px 0; }
+  .bt-main-menu a {
+    color: black;
+    font-size: 1.25rem;
+    background-color: #FFEBDD;
+    border: .3125rem solid #A10000;
+    margin: 0; }
+    .bt-main-menu a:hover {
+      color: #7c7a7a; }
 
 .navbar-2 {
   display: none; }
@@ -142,6 +341,7 @@ footer {
       font-weight: none;
       font-style: none;
       font-size: 1.5625rem;
+      text-align: none;
       margin: 1.875rem; }
       .navbar .nav-list .nav-item:hover, .navbar .nav-list .nav-item-active:hover {
         color: #9e9e9e; }

@@ -1,17 +1,27 @@
-@mixin hero($bgimg, $bgrepeat, $bgposition, $bgblend, $bgsize, $bgcolor, $width, $height ){
+// @mixin hero($bgimg, $bgrepeat, $bgposition, $bgblend, $bgsize, $bgcolor, $width, $height ){
+//     background-image: $bgimg;
+//     background-repeat: $bgrepeat;
+//     background-position: $bgposition;
+//     background-blend-mode: $bgblend;
+//     background-size: $bgsize;
+//     background-color: $bgcolor;
+//     width: $width;
+//     height: $height;}
+
+@mixin hero($bgimg, $width, $height ){
     background-image: $bgimg;
-    background-repeat: $bgrepeat;
-    background-position: $bgposition;
-    background-blend-mode: $bgblend;
-    background-size: $bgsize;
-    background-color: $bgcolor;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: rgba(138, 67, 67, 0.5);
     width: $width;
     height: $height;}
 
-@mixin flex($direction,$warp,$justify,$align,$gap,$flex){
+@mixin flex($direction,$wrap,$justify,$align,$gap,$flex){
     display: flex;
     flex-direction: $direction ;
-    flex-wrap: $warp ;
+    flex-wrap: $wrap ;
     justify-content: $justify ;
     align-items: $align ;
     gap: $gap ;
@@ -26,11 +36,21 @@
     justify-content: $justify ;
     align-items: $align ;}
 
-@mixin fonts($color, $font-family, $font-weight, $font-style, $font-size){
+@mixin gridself($rowstart, $rowend, $columnstart, $columnend, $align, $justify) {
+    grid-row-start: $rowstart;
+    grid-row-end: $rowend;
+    grid-column-start: $columnstart;
+    grid-column-end: $columnend;
+    align-self: $align;
+    justify-self: $justify;
+}
+
+@mixin fonts($color, $font-family, $font-weight, $font-style, $font-size, $text-aling){
     color: $color;
     font-family: $font-family;
     font-weight: $font-weight;
     font-style: $font-style;
-    font-size: $font-size;}
+    font-size: $font-size;
+    text-align: $text-aling;}
 
 

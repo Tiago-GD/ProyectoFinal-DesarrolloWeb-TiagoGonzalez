@@ -22,7 +22,7 @@
         @include flex(row, wrap, none, center, none, 1);
         .nav-item, .nav-item-active {
             display: flex;
-            @include fonts($colorLetrasMain, "Antonio", none, none, 1.5625rem );
+            @include fonts($colorLetrasMain, "Antonio", none, none, 1.5625rem, none);
             margin: 1.875rem;
             &:hover{
                 color: rgb(158, 158, 158);

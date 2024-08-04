@@ -1,5 +1,5 @@
 .button-delivery , .button-delivery-active {
-    @include fonts(map-get($colores, color2), "Antonio", none, none, 1.5625rem );
+    @include fonts(map-get($colores, color2), "Antonio", none, none, 1.5625rem, none);
     background-color: #A10000;
     border-radius: $border;
     padding: .625rem 2.5rem;
@@ -11,6 +11,9 @@
 
 .button-delivery-active{
     color: black;
+    &:hover{
+        color: map-get($colores, color2);
+    }
 }
 
 .footer-main a, .footer-contact a {
@@ -19,3 +22,25 @@
     margin: 2.5rem 1.875rem 3.125rem 1.875rem;
     display: inline-block;
 }
+
+.hero a{
+    @extend .button-delivery;
+    @include gridself(4, 5, 2, 3, center, center);
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.bt-main-menu{
+    @include flex(column, wrap, center, center, none, none);
+    margin: 115px 0 115px 0;
+    a{
+        @extend .button-delivery;
+        color: map-get($colores, color1);
+        font-size: 1.25rem;
+        background-color: #FFEBDD;
+        border:  .3125rem solid #A10000;
+        margin: 0;
+        &:hover{
+            color: rgb(124, 122, 122);
+        }}
+} 

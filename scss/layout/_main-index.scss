@@ -4,7 +4,7 @@ body::before {
     height: 10.5625rem;
 }
 
-main{
+.inicio-page main{
     @include flex(column, warp, none, none, none, none);
     background-color: $colorPrincipal2;
     .hero{

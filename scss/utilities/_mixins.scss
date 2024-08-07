@@ -1,13 +1,3 @@
-// @mixin hero($bgimg, $bgrepeat, $bgposition, $bgblend, $bgsize, $bgcolor, $width, $height ){
-//     background-image: $bgimg;
-//     background-repeat: $bgrepeat;
-//     background-position: $bgposition;
-//     background-blend-mode: $bgblend;
-//     background-size: $bgsize;
-//     background-color: $bgcolor;
-//     width: $width;
-//     height: $height;}
-
 @mixin hero($bgimg, $width, $height ){
     background-image: $bgimg;
     background-repeat: no-repeat;

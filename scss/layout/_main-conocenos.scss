@@ -6,66 +6,66 @@
         h1{
             @include fonts(map-get($colores, color2), "Arbutus Slab", normal, normal, 3.125rem, none);}
     }
+}
 
-    .cono-info {
-        width: 100%;
-        padding: 2rem 11rem;
-        margin-top: 8rem;
-        .div-info {
-            @include flex(row, nowrap, center, center, none, none);
-            margin-bottom: 8rem;
-            &.div-info-a {
-                flex-direction: row;
-                p{
-                    margin-left: 15.625rem;
-                }}
-            &.div-info-b {
-                flex-direction: row-reverse;
-                p{
-                    margin-right: 15.625rem;
+.cono-info {
+    width: 100%;
+    padding: 2rem 11rem;
+    margin-top: 8rem;
+    .div-info {
+        @include flex(row, nowrap, center, center, none, none);
+        margin-bottom: 8rem;
+        &.div-info-a {
+            flex-direction: row;
+            p{
+                margin-left: 15.625rem;
+            }}
+        &.div-info-b {
+            flex-direction: row-reverse;
+            p{
+                margin-right: 15.625rem;
 
-                }}
-    
-            p {
-                @include fonts(#525252, "Abel", normal, normal, 30px, justify);
-                line-height: 3.125rem;
-                flex: 1;
+            }}
 
+        p {
+            @include fonts(#525252, "Abel", normal, normal, 30px, justify);
+            line-height: 3.125rem;
+            flex: 1;
+
+        }
+
+        .image-container {
+            @include flex(row, wrap, center, center, none, 0 0 25rem);
+            height: 18.75rem;
+            border-radius: $border;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+
+            h3 {
+                @include flex(row, wrap, center, center, none, none);
+                @include fonts(map-get($colores, color2), "Arbutus Slab", normal, normal, 28px, none);
+                width: 100%;
+                height: 100%;
+                background-blend-mode: multiply;
+                background-color: rgba(84, 40, 40, 0.5);
             }
-    
-            .image-container {
-                @include flex(row, wrap, center, center, none, 0 0 25rem);
-                height: 18.75rem;
-                border-radius: $border;
-                overflow: hidden;
-                background-size: cover;
-                background-position: center;
-    
-                h3 {
-                    @include flex(row, wrap, center, center, none, none);
-                    @include fonts(map-get($colores, color2), "Arbutus Slab", normal, normal, 28px, none);
-                    width: 100%;
-                    height: 100%;
-                    background-blend-mode: multiply;
-                    background-color: rgba(84, 40, 40, 0.5);
-                }
-            }
-    
-            .cono-info-hist {
-                background-image: url("https://images.unsplash.com/photo-1569230516306-5a8cb5586399?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-            }
-    
-            .cono-info-valo {
-                background-image: url("https://plus.unsplash.com/premium_photo-1679591002618-bc0b4de816cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-            }
-    
-            .cono-info-expe {
-                background-image: url("https://images.unsplash.com/photo-1572552635104-daf938e0aa1f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-            }
-    
-            .cono-info-prem {
-                background-image: url("https://images.unsplash.com/photo-1696454599157-a47c99f7e83a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-            }
+        }
+
+        .cono-info-hist {
+            background-image: url("https://images.unsplash.com/photo-1569230516306-5a8cb5586399?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+
+        .cono-info-valo {
+            background-image: url("https://plus.unsplash.com/premium_photo-1679591002618-bc0b4de816cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+
+        .cono-info-expe {
+            background-image: url("https://images.unsplash.com/photo-1572552635104-daf938e0aa1f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+
+        .cono-info-prem {
+            background-image: url("https://images.unsplash.com/photo-1696454599157-a47c99f7e83a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         }
     }
 }

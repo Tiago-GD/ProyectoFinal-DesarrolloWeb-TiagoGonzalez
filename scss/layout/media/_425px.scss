@@ -1,0 +1,73 @@
+@media (max-width: 425px) {
+
+/* Header */
+    body::before{
+        height: 17.5rem;}
+
+    header{
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        .logo-container {
+            display: grid;
+            @include gridself(1, 2, 1, 3, none, center);
+            .logo {
+                width: 8.75rem;
+                height: 8.75rem;
+                margin: 0;
+            }
+        }
+        .navbar {
+            @include gridself(2, 3, 1, 2, none, none);
+            .insta-navbar {
+                display: none;
+            }
+            .nav-list {
+                display: none;
+            }
+            .button-delivery , .button-delivery-active{
+                margin: 0;
+                padding: .625rem 2rem;
+                font-size: 20px;
+            }
+        }
+        .nav-item, .nav-item-active {
+            @include fonts($colorBotones, "Antonio", none, none, 1.25rem, none);
+            display: block;
+            padding: 10px 0;
+            margin: .9375rem;
+            &.nav-item-active{
+                color: map-get($colores, color1);
+            }
+        }
+        .navbar-2 {
+            @include flex(column, wrap, center, center, none, none);
+            @include gridself(2, 3, 2, 3, none, none);
+        }
+    }
+
+/* Footer */
+    footer{
+        @include flex(column,wrap,none,start,none,none);
+        .footer-main, .footer-hours, .footer-contact{
+            & h2{
+                font-size: 1.5625rem;
+            }
+            & p{
+                margin: 30px 18px 30px 18px;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
+    
+
+    .inicio-page main{
+        display: none;
+    }
+

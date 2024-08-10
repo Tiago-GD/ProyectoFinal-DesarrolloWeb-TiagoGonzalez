@@ -54,14 +54,12 @@ body::before {
             height: 12.5rem;
             margin: .625rem;
             border-radius: $border;}
-        .pizzeria{
+        .pizzeria, .restaurante ,.cafeteria{
             @include flex(column, wrap, none, center, none, none);
             @include gridself(1, 2, 2, 3, none, none);}   
         .restaurante{
-            @extend .pizzeria;
             @include gridself(1, 2, 3, 4, none, none);}
         .cafeteria{
-            @extend .pizzeria;
             @include gridself(1, 2, 4, 5, flex-start, center);}
 
     }

@@ -1,0 +1,58 @@
+.menu-page main{
+    background-color: $colorPrincipal2;
+    .hero-menu{
+        @include hero(url(https://images.unsplash.com/photo-1589187151053-5ec8818e661b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D), 100%, 25.625rem);
+        h1{
+            @include fonts(map-get($colores, color2), "Arbutus Slab", normal, normal, 3.125rem, none);
+        }
+    }
+    .search-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 5% 0 7% 0;
+        & input[type="text"] {
+            width: 80%; 
+            padding: 10px;
+            border: 3px solid $colorPrincipal1; 
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            outline: none;
+            &::placeholder {
+                color: $colorPrincipal1; 
+            }
+        }      
+    }
+    .menu{
+        gap: 75px;
+        h2{
+            @include fonts(map-get($colores, color2), "Arbutus Slab", normal, normal, 1.875rem, none);
+            background-color: $colorPrincipal1;
+            padding: 1.25rem 2.5rem 0px 2.5rem;
+            border-radius: 1.875rem 1.875rem 0 0 ;
+            display: inline;
+        }
+        .pizza, .entradas, .pasta{
+            width: 60%;
+            height: 100%;
+            .menu-lista{
+                background-color: $colorPrincipal1;
+                @include fonts(map-get($colores, color2), "Abel", normal, normal, 1.5625rem, none);
+                line-height: 40px;
+                border-radius: 0 1.875rem 1.875rem 1.875rem;
+                li{
+                    margin: 0 7% 0 7%;
+                    list-style: decimal;
+                    ul, li{
+                        list-style: circle;
+                    }
+                }
+            }
+        }
+        & .pasta{
+            margin-bottom: 5%;
+        }
+    }
+}

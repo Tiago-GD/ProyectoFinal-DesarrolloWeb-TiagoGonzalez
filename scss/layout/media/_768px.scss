@@ -139,6 +139,19 @@
         }
     }
 
+/* Main menu */
+    .menu-page{
+        main{
+            .menu{
+                .pizza, .entradas, .pasta{
+                    .menu-lista{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+
 /* Main conocenos */
     .contacto-page{
         main{

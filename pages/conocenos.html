@@ -13,6 +13,7 @@
         <title>Conócenos</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Abel&family=Antonio:wght@100..700&family=Arbutus+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
         <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/styles.css">
     </head>
@@ -67,25 +68,25 @@
             </section>
             
             <section class="cono-info">
-                <div class="div-info div-info-a">
+                <div class="div-info div-info-a" data-aos="fade-right">
                     <div class="image-container cono-info-hist">
                         <h3>Historia y Misión</h3>
                     </div>
                     <p>En Pizza Paradice, llevamos desde 1989 ofreciendo pizzas artesanales con ingredientes frescos y recetas tradicionales italianas. Nuestra misión es crear un ambiente acogedor donde cada visita sea una experiencia gastronómica memorable.</p>
                 </div>
-                <div class="div-info div-info-b">
+                <div class="div-info div-info-b" data-aos="fade-right">
                     <div class="image-container cono-info-valo">
                         <h3>Valores</h3>
                     </div>
                     <p>Valoramos la calidad, la autenticidad y la pasión por la buena comida. Nos esforzamos por usar solo los mejores ingredientes y mantener estándares elevados en cada pizza que servimos.</p>
                 </div>
-                <div class="div-info div-info-a">
+                <div class="div-info div-info-a" data-aos="fade-right">
                     <div class="image-container cono-info-expe">
                         <h3>Experiencia del Cliente</h3>
                     </div>
                     <p>Para nosotros, nuestros clientes son nuestra prioridad. Nos esforzamos por brindar un servicio excepcional y un ambiente cálido donde puedan disfrutar de momentos especiales con familiares y amigos.</p>
                 </div>
-                <div class="div-info div-info-b">
+                <div class="div-info div-info-b" data-aos="fade-right">
                     <div class="image-container cono-info-prem">
                         <h3>Premios o Reconocimientos</h3>
                     </div>
@@ -94,7 +95,7 @@
             </section>            
         </main>
 
-        <footer>
+        <footer data-aos="fade-up">
             <!-- Sección ubicacion -->
             <section class="footer-main">
                 <div class="footer-logo">
@@ -128,6 +129,12 @@
             </div>
         </footer>
 
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              AOS.init();
+            });
+          </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>

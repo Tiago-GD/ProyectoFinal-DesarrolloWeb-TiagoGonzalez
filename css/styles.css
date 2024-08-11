@@ -27,7 +27,29 @@ header {
   top: 0; }
 
 .logo-container {
+  animation: text-focus-in 0.5s ease-in-out 0s;
+  -webkit-animation: text-focus-in 0.5s ease-in-out 0s;
   flex: 1; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
   .logo-container .logo {
     width: 10.3125rem;
     height: 10.3125rem;
@@ -103,6 +125,8 @@ body::before {
   flex: none;
   background-color: #FFEBDD; }
   .inicio-page main .hero {
+    animation: tracking-in-expand 1s ease-in-out 0s;
+    -webkit-animation: tracking-in-expand 1s ease-in-out 0s;
     background-image: url(https://images.unsplash.com/photo-1593504049359-74330189a345?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-repeat: no-repeat;
     background-position: center;
@@ -118,6 +142,24 @@ body::before {
     row-gap: 0.625rem;
     justify-content: none;
     align-items: none; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
     .inicio-page main .hero h1 {
       color: white;
       font-family: "Arbutus Slab";
@@ -254,6 +296,8 @@ body::before {
 .conocenos-page main {
   background-color: #FFEBDD; }
   .conocenos-page main .hero-cono {
+    animation: tracking-in-expand 1s ease-in-out 0s;
+    -webkit-animation: tracking-in-expand 1s ease-in-out 0s;
     background-image: url(https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-repeat: no-repeat;
     background-position: center;
@@ -269,6 +313,24 @@ body::before {
     align-items: center;
     gap: none;
     flex: none; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
     .conocenos-page main .hero-cono h1 {
       color: white;
       font-family: "Arbutus Slab";
@@ -350,6 +412,8 @@ body::before {
 .menu-page main {
   background-color: #FFEBDD; }
   .menu-page main .hero-menu {
+    animation: tracking-in-expand 1s ease-in-out 0s;
+    -webkit-animation: tracking-in-expand 1s ease-in-out 0s;
     background-image: url(https://images.unsplash.com/photo-1589187151053-5ec8818e661b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-repeat: no-repeat;
     background-position: center;
@@ -358,6 +422,24 @@ body::before {
     background-color: rgba(138, 67, 67, 0.5);
     width: 100%;
     height: 25.625rem; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
     .menu-page main .hero-menu h1 {
       color: white;
       font-family: "Arbutus Slab";
@@ -418,6 +500,8 @@ body::before {
 .contacto-page main {
   background-color: #FFEBDD; }
   .contacto-page main .hero-cont {
+    animation: tracking-in-expand 1s ease-in-out 0s;
+    -webkit-animation: tracking-in-expand 1s ease-in-out 0s;
     background-image: url(https://images.unsplash.com/photo-1606455036891-15e4be71eef0?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-repeat: no-repeat;
     background-position: center;
@@ -433,6 +517,24 @@ body::before {
     align-items: center;
     gap: none;
     flex: none; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
     .contacto-page main .hero-cont h1 {
       color: white;
       font-family: "Arbutus Slab";
@@ -501,6 +603,8 @@ body::before {
 .delivery-page main {
   background-color: #FFEBDD; }
   .delivery-page main .hero-deli {
+    animation: tracking-in-expand 1s ease-in-out 0s;
+    -webkit-animation: tracking-in-expand 1s ease-in-out 0s;
     background-image: url(https://images.unsplash.com/photo-1526367790999-0150786686a2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-repeat: no-repeat;
     background-position: center;
@@ -509,6 +613,24 @@ body::before {
     background-color: rgba(138, 67, 67, 0.5);
     width: 100%;
     height: 25.625rem; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
     .delivery-page main .hero-deli h1 {
       color: white;
       font-family: "Arbutus Slab";
@@ -590,7 +712,29 @@ body::before {
   font-size: 1.75rem; }
 
 .navbar-2 {
+  animation: text-focus-in 0.5s ease-in-out 0s;
+  -webkit-animation: text-focus-in 0.5s ease-in-out 0s;
   display: none; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
   .navbar-2 .menu-toggle {
     display: none; }
   .navbar-2 .navbar-toggler {
@@ -608,7 +752,29 @@ body::before {
   justify-content: center;
   align-items: center;
   gap: none;
-  flex: 2; }
+  flex: 2;
+  animation: text-focus-in 0.5s ease-in-out 0s;
+  -webkit-animation: text-focus-in 0.5s ease-in-out 0s; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
   .navbar ul, .navbar .navbar {
     margin: 0;
     padding: 0; }

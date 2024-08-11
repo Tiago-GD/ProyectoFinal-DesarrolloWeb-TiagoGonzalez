@@ -102,7 +102,7 @@ body::before {
   gap: none;
   flex: none;
   background-color: #FFEBDD; }
-  .inicio-page main .hero {
+  .inicio-page main .hero, .inicio-page .delivery-page main .hero-deli, .delivery-page .inicio-page main .hero-deli {
     background-image: url(https://images.unsplash.com/photo-1593504049359-74330189a345?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-repeat: no-repeat;
     background-position: center;
@@ -118,7 +118,7 @@ body::before {
     row-gap: 0.625rem;
     justify-content: none;
     align-items: none; }
-    .inicio-page main .hero h1 {
+    .inicio-page main .hero h1, .inicio-page .delivery-page main .hero-deli h1, .delivery-page .inicio-page main .hero-deli h1 {
       color: white;
       font-family: "Arbutus Slab";
       font-weight: normal;
@@ -131,7 +131,7 @@ body::before {
       grid-column-end: 4;
       align-self: flex-end;
       justify-self: center; }
-    .inicio-page main .hero p {
+    .inicio-page main .hero p, .inicio-page .delivery-page main .hero-deli p, .delivery-page .inicio-page main .hero-deli p {
       color: white;
       font-family: "Arbutus Slab";
       font-weight: normal;
@@ -430,7 +430,43 @@ body::before {
     height: 130px;
     border-radius: 1.875rem; }
 
-.button-delivery, .footer-main a, .footer-contact a, .hero a, .bt-main-menu a, .button-delivery-active {
+.delivery-page main {
+  background-color: #FFEBDD; }
+  .delivery-page main .hero-deli {
+    background-image: url(https://images.unsplash.com/photo-1526367790999-0150786686a2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: rgba(138, 67, 67, 0.5);
+    width: 100%;
+    height: 25.625rem; }
+    .delivery-page main .hero-deli h1 {
+      color: white;
+      font-family: "Arbutus Slab";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 3.125rem;
+      text-align: none; }
+  .delivery-page main .pedidos {
+    margin: 8% 0 4% 0; }
+    .delivery-page main .pedidos h2 {
+      font-family: "Arbutus Slab";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2.8125rem;
+      text-align: none; }
+    .delivery-page main .pedidos p {
+      color: #525252;
+      font-family: "Abel";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.4375rem;
+      text-align: none; }
+  .delivery-page main .bt-main-deli a {
+    margin: 4% 0 4% 0; }
+
+.button-delivery, .footer-main a, .footer-contact a, .hero a, .delivery-page main .hero-deli a, .bt-main-menu a, .bt-main-deli a, .button-delivery-active {
   color: white;
   font-family: "Antonio";
   font-weight: none;
@@ -441,7 +477,7 @@ body::before {
   border-radius: 1.875rem;
   padding: .625rem 2.5rem;
   margin: 2.5rem 1.875rem 0 1.875rem; }
-  .button-delivery:hover, .footer-main a:hover, .footer-contact a:hover, .hero a:hover, .bt-main-menu a:hover, .button-delivery-active:hover {
+  .button-delivery:hover, .footer-main a:hover, .footer-contact a:hover, .hero a:hover, .delivery-page main .hero-deli a:hover, .bt-main-menu a:hover, .bt-main-deli a:hover, .button-delivery-active:hover {
     color: #cecece; }
 
 .button-delivery-active {
@@ -454,7 +490,7 @@ body::before {
   margin: 2.5rem 1.875rem 3.125rem 1.875rem;
   display: inline-block; }
 
-.hero a {
+.hero a, .delivery-page main .hero-deli a {
   grid-row-start: 4;
   grid-row-end: 5;
   grid-column-start: 2;
@@ -481,6 +517,9 @@ body::before {
     margin: 0; }
     .bt-main-menu a:hover {
       color: #7c7a7a; }
+
+.bt-main-deli a {
+  font-size: 1.75rem; }
 
 .navbar-2 {
   display: none; }
@@ -537,7 +576,9 @@ body::before {
   .inicio-page main .about p {
     width: 45%; }
   .inicio-page main .service P {
-    font-size: 1.4063rem; } }
+    font-size: 1.4063rem; }
+  .conocenos-page main .cono-info .div-info p {
+    font-size: 1.5625rem; } }
 
 @media (max-width: 768px) {
   /* Header */
@@ -550,7 +591,7 @@ body::before {
   header .navbar .nav-list .nav-item, header .navbar .nav-list .nav-item-active {
     margin: .9375rem;
     font-size: 1.25rem; }
-  header .navbar .button-delivery-container .button-delivery, header .navbar .button-delivery-container .footer-main a, .footer-main header .navbar .button-delivery-container a, header .navbar .button-delivery-container .footer-contact a, .footer-contact header .navbar .button-delivery-container a, header .navbar .button-delivery-container .hero a, .hero header .navbar .button-delivery-container a, header .navbar .button-delivery-container .bt-main-menu a, .bt-main-menu header .navbar .button-delivery-container a, header .navbar .button-delivery-container .button-delivery-active {
+  header .navbar .button-delivery-container .button-delivery, header .navbar .button-delivery-container .footer-main a, .footer-main header .navbar .button-delivery-container a, header .navbar .button-delivery-container .footer-contact a, .footer-contact header .navbar .button-delivery-container a, header .navbar .button-delivery-container .hero a, .hero header .navbar .button-delivery-container a, header .navbar .button-delivery-container .delivery-page main .hero-deli a, .delivery-page main .hero-deli header .navbar .button-delivery-container a, header .navbar .button-delivery-container .bt-main-menu a, .bt-main-menu header .navbar .button-delivery-container a, header .navbar .button-delivery-container .bt-main-deli a, .bt-main-deli header .navbar .button-delivery-container a, header .navbar .button-delivery-container .button-delivery-active {
     margin: 2.5rem 15px 0 15px;
     font-size: 1.25rem; }
   header .insta-navbar-container .insta-navbar {
@@ -571,7 +612,7 @@ body::before {
   body::before {
     height: 9rem; }
   /* Main inicio */
-  .inicio-page main .hero {
+  .inicio-page main .hero, .inicio-page .delivery-page main .hero-deli, .delivery-page .inicio-page main .hero-deli {
     height: 35.625rem; }
   .inicio-page main .about h2 {
     font-size: 1.5313rem;
@@ -663,7 +704,7 @@ body::before {
         display: none; }
       header .navbar .nav-list {
         display: none; }
-      header .navbar .button-delivery, header .navbar .footer-main a, .footer-main header .navbar a, header .navbar .footer-contact a, .footer-contact header .navbar a, header .navbar .hero a, .hero header .navbar a, header .navbar .bt-main-menu a, .bt-main-menu header .navbar a, header .navbar .button-delivery-active {
+      header .navbar .button-delivery, header .navbar .footer-main a, .footer-main header .navbar a, header .navbar .footer-contact a, .footer-contact header .navbar a, header .navbar .hero a, .hero header .navbar a, header .navbar .delivery-page main .hero-deli a, .delivery-page main .hero-deli header .navbar a, header .navbar .bt-main-menu a, .bt-main-menu header .navbar a, header .navbar .bt-main-deli a, .bt-main-deli header .navbar a, header .navbar .button-delivery-active {
         margin: 0;
         padding: .625rem 2rem; }
     header .nav-item, header .nav-item-active {
@@ -706,15 +747,15 @@ body::before {
     footer .footer-main p, footer .footer-hours p, footer .footer-contact p {
       margin: 30px 18px 30px 18px; }
   /* Main Inicio */
-  .inicio-page main .hero {
+  .inicio-page main .hero, .inicio-page .delivery-page main .hero-deli, .delivery-page .inicio-page main .hero-deli {
     height: 28.125rem; }
-    .inicio-page main .hero h1 {
+    .inicio-page main .hero h1, .inicio-page .delivery-page main .hero-deli h1, .delivery-page .inicio-page main .hero-deli h1 {
       font-size: 2.5rem;
       text-align: center; }
-    .inicio-page main .hero p {
+    .inicio-page main .hero p, .inicio-page .delivery-page main .hero-deli p, .delivery-page .inicio-page main .hero-deli p {
       font-size: 1.375rem;
       text-align: center; }
-    .inicio-page main .hero a {
+    .inicio-page main .hero a, .inicio-page .delivery-page main .hero-deli a, .delivery-page .inicio-page main .hero-deli a {
       grid-row-end: 6;
       grid-column-start: 1;
       grid-column-end: 4; }

@@ -44,3 +44,8 @@
             color: rgb(124, 122, 122);
         }}
 } 
+
+.bt-main-deli a{
+    @extend .button-delivery;
+    font-size: 1.75rem;
+}

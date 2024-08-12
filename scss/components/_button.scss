@@ -16,6 +16,13 @@
     }
 }
 
+.button-delivery-container{
+    transition: transform 0.2s linear;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
 .footer-main a, .footer-contact a {
     @extend .button-delivery;
     font-size: 1.25rem;

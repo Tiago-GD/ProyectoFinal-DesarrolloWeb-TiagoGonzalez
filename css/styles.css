@@ -675,6 +675,11 @@ body::before {
   .button-delivery-active:hover {
     color: white; }
 
+.button-delivery-container {
+  transition: transform 0.2s linear; }
+  .button-delivery-container:hover {
+    transform: scale(1.1); }
+
 .footer-main a, .footer-contact a {
   font-size: 1.25rem;
   margin: 2.5rem 1.875rem 3.125rem 1.875rem;

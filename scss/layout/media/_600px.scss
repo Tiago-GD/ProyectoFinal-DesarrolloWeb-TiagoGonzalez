@@ -1,4 +1,4 @@
-@media (max-width: 425px) {
+@media (max-width: 600px) {
     body::before{
         height: 17.5rem;}
 
@@ -15,9 +15,6 @@
         }
         .navbar {
             @include gridself(2, 3, 1, 2, none, none);
-            .insta-navbar {
-                display: none;
-            }
             .nav-list {
                 display: none;
             }

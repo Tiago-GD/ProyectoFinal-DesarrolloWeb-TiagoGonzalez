@@ -1,24 +1,38 @@
 @media (max-width: 768px) {
-/* Main conocenos */
-    // .conocenos-page{
-    //     main{
-    //         .cono-info{
-    //             .div-info{
-    //                 p{
-    //                     font-size: 1.25rem;
-    //                 }
-    //                 &.div-info-a{
-    //                     p{
-    //                         margin-left: 3rem;
-    //                     }
-    //                 }
-    //                 &.div-info-b{
-    //                     p{
-    //                         margin-right: 3rem;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
+    /* Header */
+    header{
+        .logo-container{
+            .logo{
+                margin-left: .625rem;
+            }
+        }
+        .navbar{
+            .nav-list{
+                .nav-item, .nav-item-active {
+                    margin: .75rem;}
+            }
+        }
+        .insta-navbar-container{
+            .insta-navbar {
+                margin: 10px;
+            }
+        }
+    }
+
+/* Footer */
+    .footer-contact a{
+        margin: 40px 0 0 0;
+    }
+
+/* Main inicio */
+    .inicio-page{
+        main{
+            .bt-main-menu{
+                margin: 100px 0 0 0;
+            }
+        }
+    }
 }
+
+
+

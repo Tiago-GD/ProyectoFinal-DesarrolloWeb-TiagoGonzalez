@@ -959,7 +959,29 @@ body::before {
       margin: 0 0 75px 0;
       text-align: center; } }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+  /* Header */
+  header .logo-container .logo {
+    margin-left: .625rem; }
+  header .navbar .nav-list .nav-item, header .navbar .nav-list .nav-item-active {
+    margin: .75rem; }
+  header .insta-navbar-container .insta-navbar {
+    margin: 10px; }
+  /* Footer */
+  .footer-contact a {
+    margin: 40px 0 0 0; }
+  /* Main inicio */
+  .inicio-page main .bt-main-menu {
+    margin: 100px 0 0 0; } }
+
+@media (max-width: 768px) {
+  /* Header */
+  header .navbar .nav-list .nav-item, header .navbar .nav-list .nav-item-active {
+    margin: 7px; }
+  header .insta-navbar-container .insta-navbar {
+    display: none; } }
+
+@media (max-width: 600px) {
   body::before {
     height: 17.5rem; }
   /* Header */
@@ -983,8 +1005,6 @@ body::before {
       grid-column-end: 2;
       align-self: none;
       justify-self: none; }
-      header .navbar .insta-navbar {
-        display: none; }
       header .navbar .nav-list {
         display: none; }
       header .navbar .button-delivery, header .navbar .footer-main a, .footer-main header .navbar a, header .navbar .footer-contact a, .footer-contact header .navbar a, header .navbar .hero a, .hero header .navbar a, header .navbar .bt-main-menu a, .bt-main-menu header .navbar a, header .navbar .bt-main-deli a, .bt-main-deli header .navbar a, header .navbar .button-delivery-active {
@@ -1083,3 +1103,19 @@ body::before {
 
 .delivery-page main .bt-main-deli a {
   font-size: 1.375rem; }
+
+@media (max-width: 24.6875rem) {
+  /* Main inicio */
+  .inicio-page main .service p {
+    margin: .9375rem 0 2.5rem 0; } }
+
+@media (max-width: 21.5625rem) {
+  /* Main inicio */
+  .inicio-page main .service img {
+    width: 13.75rem;
+    height: 13.75rem; } }
+
+@media (max-width: 20rem) {
+  /* Main conocenos */
+  .conocenos-page main .hero-cono h1 {
+    font-size: 2.8125rem; } }

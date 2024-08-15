@@ -20,7 +20,7 @@
             height: 350px;}
         h3{
             @include fonts(map-get($colores, color1), "Arbutus Slab", normal, normal, 1.875rem, none);
-            @include gridself(1, 2, 2, 4, none, none);}
+            @include gridself(1, 2, 2, 5, none, none);}
         p{
             @include fonts($colorLetrasMain, "Abel", normal, normal, 1.5625rem, none);
             @include gridself(1, 3, 2, 5, none, none);

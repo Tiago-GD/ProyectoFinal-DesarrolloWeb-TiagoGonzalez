@@ -1,0 +1,50 @@
+@media(max-width:1315px){
+
+/* Header */
+    header{
+        .logo-container{
+            flex: 0;
+        }
+        .navbar{
+            .nav-list{
+                justify-content: center;
+            }
+        }
+    }
+
+/* Main inicio */
+    .inicio-page{
+        main{
+            .service{
+                    column-gap: 25px;
+                }
+            
+            .bt-main-menu{
+                height: 40vh;
+                margin: 115px 0 0 0;
+            }
+        }
+    }
+
+/* Main conocenos */
+    .conocenos-page{
+        main{
+            .cono-info{
+                // padding: 2rem 3rem; 
+                .div-info{
+                    &.div-info-a{
+                        p{
+                            margin-left: 6.25rem;
+                        }
+                    }
+                    &.div-info-b{
+                        p{
+                            margin-right: 6.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

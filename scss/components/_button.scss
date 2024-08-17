@@ -23,6 +23,20 @@
     }
 }
 
+.insta-navbar-container{
+    a{
+        img{
+            &:hover{
+                transform: scale(1.1);
+                transition: transform 0.2s linear;}
+        }
+    }
+}
+
+.footer-social{
+    @extend .insta-navbar-container
+}
+
 .footer-main a, .footer-contact a {
     @extend .button-delivery;
     font-size: 1.25rem;

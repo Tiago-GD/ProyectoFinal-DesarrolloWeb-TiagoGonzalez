@@ -680,6 +680,10 @@ body::before {
   .button-delivery-container:hover {
     transform: scale(1.1); }
 
+.insta-navbar-container a img:hover, .footer-social a img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s linear; }
+
 .footer-main a, .footer-contact a {
   font-size: 1.25rem;
   margin: 2.5rem 1.875rem 3.125rem 1.875rem;
@@ -880,7 +884,7 @@ body::before {
   header .navbar .button-delivery-container .button-delivery, header .navbar .button-delivery-container .footer-main a, .footer-main header .navbar .button-delivery-container a, header .navbar .button-delivery-container .footer-contact a, .footer-contact header .navbar .button-delivery-container a, header .navbar .button-delivery-container .hero a, .hero header .navbar .button-delivery-container a, header .navbar .button-delivery-container .bt-main-menu a, .bt-main-menu header .navbar .button-delivery-container a, header .navbar .button-delivery-container .bt-main-deli a, .bt-main-deli header .navbar .button-delivery-container a, header .navbar .button-delivery-container .button-delivery-active {
     margin: 2.5rem 15px 0 15px;
     font-size: 1.25rem; }
-  header .insta-navbar-container .insta-navbar {
+  header .insta-navbar-container .insta-navbar, header .footer-social .insta-navbar {
     width: 60px;
     height: 53px;
     margin: 15px; }
@@ -965,7 +969,7 @@ body::before {
     margin-left: .625rem; }
   header .navbar .nav-list .nav-item, header .navbar .nav-list .nav-item-active {
     margin: .75rem; }
-  header .insta-navbar-container .insta-navbar {
+  header .insta-navbar-container .insta-navbar, header .footer-social .insta-navbar {
     margin: 10px; }
   /* Footer */
   .footer-contact a {
@@ -974,11 +978,11 @@ body::before {
   .inicio-page main .bt-main-menu {
     margin: 100px 0 0 0; } }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   /* Header */
   header .navbar .nav-list .nav-item, header .navbar .nav-list .nav-item-active {
     margin: 7px; }
-  header .insta-navbar-container .insta-navbar {
+  header .insta-navbar-container .insta-navbar, header .footer-social .insta-navbar {
     display: none; } }
 
 @media (max-width: 600px) {
